@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Staatliches&family=Tourney:wght@600&display=swap");
+
+
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Francois One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+h2 > span {
+    font-family: "Farro";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    vertical-align: top;
+}
+
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+p span {
+    background-color: #dadada;
+  }
+
+/* header start */
+
+.header__wrapper {
+    max-width: 1200px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 20px auto 100px;
+
+}
+
+.header__nav {
+    margin-left: 50px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.item::after {
+    content: '/';
+    color: #000;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 10px;
+}
+
+.list__item-link {
+    text-decoration: none;
+    color:rgb(60, 60, 60);
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+.list__item-link:hover {
+    opacity: 0.65;
+}
+
+.active {
+    color: #000;
+}
+
+.header__logo {
+    margin: 0 0 0 auto;
+}
+
+
+.eng {
+    font-family: 'Tourney', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    color: black;    
+}
+
+/* header end */
+
+/* main start */
+
+.main {
+    background: url(./img/bg-picture.svg) no-repeat top right;
+}
+
+.main__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+hr {
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+    margin: 0 0 20px;
+}
+
+.chapter {
+    /* border-top: #000 solid 8px; */
+    margin-bottom: 70px;
+}
+
+/* main end */
+
