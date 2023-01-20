@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Staatliches&family=Tourney:wght@600&display=swap");
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* header start */
+
+.header__wrapper {
+    max-width: 1200px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 20px auto 100px;
+
+}
+
+.header__nav {
+    margin-left: 50px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.item::after {
+    content: '/';
+    color: #000;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 10px;
+}
+
+.list__item-link {
+    text-decoration: none;
+    color:rgb(80, 78, 78);
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+.list__item-link:hover {
+    opacity: 0.65;
+}
+
+.active {
+    color: #000;
+}
+
+.header__logo {
+    margin: 0 0 0 auto;
+}
+
+
+.eng {
+    font-family: 'Tourney', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    color: black;    
+}
+
+/* header end */
