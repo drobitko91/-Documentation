@@ -122,15 +122,49 @@ p span {
 /* main start */
 
 .main {
-    background: url(./img/bg-picture.svg) no-repeat top right;
+    background: url(../img/bg-picture.svg) no-repeat top right;
 }
 
 .main__wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-hr {
+.side__wrapper {
+    max-width: 385px;
+    margin-bottom: 30px;
+}
+
+.side__list > hr {
+    margin-bottom: 70px;
+}
+
+.side__list-link {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.side__list-link:hover {
+    opacity: 0.65;
+}
+/* -------------- */
+
+.chapter__wrapper {
+    max-width: 785px;
+    margin: 0 auto;
+}
+
+.chapter > hr {
     width: 100px;
     height: 8px;
     background-color: #000;
