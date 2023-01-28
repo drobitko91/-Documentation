@@ -13,6 +13,7 @@ html {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 15px;
 }
 
 
@@ -137,12 +138,50 @@ h1 {
 .logo__item {
     width: 270px;
     height: 180px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo__icon-front {
+    width: 270px;
+    height: 180px;
     background: #E6E6E6;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
 }
+
+.logo__icon-back {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: rotateX(-180deg);
+    transition: transform .4s cubic-bezier(.2,.85,.4,1.275);
+}
+
+.logo__item:hover .logo__icon-back {
+    transform: rotateX(0deg);
+    z-index: 2;
+    }
+
+.logo__item:hover .logo__icon-front {
+    transform: rotateX(180deg);
+    z-index: -1;
+    }
 
 .bottom {
     margin-bottom: 30px;
