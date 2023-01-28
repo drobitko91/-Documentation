@@ -53,12 +53,23 @@ p span {
 
 /* header start */
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    /* padding-bottom: 20px; */
+    z-index: 999;
+    background-color: white;
+}
+
 .header__wrapper {
     max-width: 1200px;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    margin: 20px auto 100px;
+    margin: 20px auto 0px;
 }
 
 .header__nav {
@@ -121,15 +132,23 @@ p span {
 /* main start */
 
 .main {
-    background: url(../img/bg-picture.svg) no-repeat top right;
+   
+}
+
+.background {
+    position: fixed;
+    z-index: 0;
+    right: 0;
 }
 
 .main__wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 170px auto 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+    z-index: 5;
 }
 
 .side__wrapper {
@@ -161,7 +180,7 @@ p span {
 
 .chapter__wrapper {
     max-width: 785px;
-    margin: 0 0 0 385px;
+    margin: 0 0 0 415px;
 }
 
 .chapter > hr {
