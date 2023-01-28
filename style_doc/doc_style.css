@@ -59,7 +59,6 @@ p span {
     /* justify-content: space-between; */
     align-items: center;
     margin: 20px auto 100px;
-
 }
 
 .header__nav {
@@ -135,7 +134,8 @@ p span {
 
 .side__wrapper {
     max-width: 385px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    position: fixed;
 }
 
 .side__list > hr {
@@ -161,7 +161,7 @@ p span {
 
 .chapter__wrapper {
     max-width: 785px;
-    margin: 0 auto;
+    margin: 0 0 0 385px;
 }
 
 .chapter > hr {
